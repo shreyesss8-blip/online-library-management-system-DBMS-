@@ -87,15 +87,5 @@ Start-Process -FilePath "C:\Program Files\MariaDB 12.2\bin\mariadbd.exe" -Argume
 ## Default Login
 
 - Username: `admin`
-- Password: `admin123`
+- Password: `Your password`
 
-## Notes
-
-- The project is intentionally kept simple and readable so that it fits a `4th semester DBMS mini project` level.
-- Passwords are stored as plain text only because this is an academic demo project. In a real system, passwords should be hashed.
-- Verification scripts included:
-  - `init_db.py`
-  - `smoke_test.py`
-  - `browser_capture.js`
-  - `generate_sql_report.py`
-  - `generate_query_results.py`
