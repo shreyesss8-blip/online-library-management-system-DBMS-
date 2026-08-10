@@ -1,85 +1,93 @@
-# Online Library Management System
+# 📚 Online Library Management System
 
-`Online Library Management System` is a VTU-style DBMS mini project built using `Flask`, `MySQL`, `HTML`, `CSS`, and `JavaScript`. It covers the common library workflows used in a college environment such as book management, student management, issue and return processing, due-date tracking, fine calculation, and dashboard reporting.
+A web-based **Library Management System** developed as a collaborative **Database Management Systems (DBMS)** project.
 
-## Main Features
+The system provides functionality for managing books, members, book issue/return operations, fines, availability, and library records through a Flask-based web application connected to a MySQL/MariaDB database.
 
-- Admin login with session handling
-- Book, author, and category management
-- Student/member management
-- Search, issue, and return book workflows
-- Stored procedures for issue and return operations
-- Triggers for availability update and fine calculation
-- Views for available books and overdue books
+## 🚀 Features
+
+- Book management
+- Member/student management
+- Book issue and return
+- Due-date tracking
+- Fine calculation
+- Book search and availability tracking
 - Dashboard statistics and reports
+- Session-based authentication
+- Form validation
+- Pagination
+- Stored procedures
+- Database triggers
+- SQL views
+- Automated testing and verification
 
-## Project Structure
+## 🛠️ Tech Stack
+
+### Backend
+- Python
+- Flask
+- Jinja2
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+
+### Database
+- MySQL / MariaDB
+- SQL
+- Stored Procedures
+- Triggers
+- Views
+
+### Database Connectivity
+- mysql-connector-python
+
+### Testing & Automation
+- Python smoke tests
+- Playwright
+- Browser automation
+
+### Configuration
+- Environment variables
+- `.env` configuration
+- Python virtual environment
+
+## 🗄️ DBMS Concepts Implemented
+
+- Relational database design
+- Database schema design
+- Primary and foreign keys
+- SQL queries and aggregations
+- CRUD operations
+- Stored procedures
+- Database triggers
+- SQL views
+- Database relationships
+- Backend-database connectivity
+
+### Stored Procedures
+
+- `IssueBook`
+- `ReturnBook`
+
+## 📂 Project Structure
 
 ```text
 online-library-management-system/
+│
 ├── app.py
+├── init_db.py
 ├── requirements.txt
 ├── .env.example
-├── database/
-│   ├── schema.sql
-│   └── queries.sql
-├── docs/
-│   ├── report.md
-│   ├── viva.md
-│   ├── poster.html
-│   └── screenshots/
+│
+├── templates/
 ├── static/
-│   ├── css/style.css
-│   └── js/app.js
-└── templates/
-```
-
-## Setup Steps
-
-1. Install Python 3.11 or later on Windows.
-2. Install MySQL or MariaDB Server.
-3. Install dependencies:
-
-```powershell
-pip install -r requirements.txt
-```
-
-4. Set environment variables if your MySQL username or password is different from the default.
-
-```powershell
-$env:MYSQL_HOST="127.0.0.1"
-$env:MYSQL_PORT="3306"
-$env:MYSQL_USER="root"
-$env:MYSQL_PASSWORD=""
-$env:MYSQL_DATABASE="online_library_db"
-$env:SECRET_KEY="library-mini-project-secret"
-```
-
-5. Initialize the database:
-
-```powershell
-python init_db.py
-```
-
-6. Run the application:
-
-```powershell
-python app.py
-```
-
-7. Open `http://127.0.0.1:5000`
-
-## Local MariaDB Setup Used During Verification
-
-The project was verified locally using:
-
-- MariaDB 12.2
-- Local data directory: `mariadb-data/`
-- Local config: [mariadb-local.ini](C:\Users\SHREYES\Documents\Codex\2026-05-16\online-library-management-system\mariadb-local.ini)
-
-
-## Default Login
-
-- Username: `admin`
-- Password: `Your password`
-
+├── database/
+│
+├── smoke_test.py
+├── browser_capture.js
+├── generate_query_results.py
+├── generate_sql_report.py
+│
+└── README.md
