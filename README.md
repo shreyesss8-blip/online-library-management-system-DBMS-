@@ -77,12 +77,6 @@ The project was verified locally using:
 - Local data directory: `mariadb-data/`
 - Local config: [mariadb-local.ini](C:\Users\SHREYES\Documents\Codex\2026-05-16\online-library-management-system\mariadb-local.ini)
 
-If you want to use the same local setup:
-
-```powershell
-& "C:\Program Files\MariaDB 12.2\bin\mysql_install_db.exe" --datadir="C:\Users\SHREYES\Documents\Codex\2026-05-16\online-library-management-system\mariadb-data" --port=3306 --default-user
-Start-Process -FilePath "C:\Program Files\MariaDB 12.2\bin\mariadbd.exe" -ArgumentList "--defaults-file=C:\Users\SHREYES\Documents\Codex\2026-05-16\online-library-management-system\mariadb-data\my.ini" -WindowStyle Hidden
-```
 
 ## Default Login
 
